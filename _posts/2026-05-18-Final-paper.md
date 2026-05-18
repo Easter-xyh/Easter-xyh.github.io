@@ -1,3 +1,10 @@
+---
+layout: post
+title: "基于多智能体辩论的多模态情感识别一致性框架研究"
+date: 2026-05-18
+categories: 本科毕业论文 多模态情感识别
+---
+
 🧠 用多智能体辩论解决多模态情感识别中的“意见不合”
 📌 写在前面
 在现实对话中，人类情绪的传达从来不是单一的：语言说了什么、语气怎么说的、脸上是什么表情——这三者往往共同构成了我们对他人情绪的判断。
@@ -61,23 +68,7 @@
 
 语音：qwen3-max + qwen3-omni
 
-总体结果
-指标	数值
-准确率	56.67%
-宏平均F1	51.78%
-加权F1	58.16%
-类别表现（F1）
-情绪	F1
-sadness	68.29%
-neutral	65.35%
-fear	64.00%
-joy	56.52%
-anger	48.48%
-surprise	34.78%
-disgust	25.00%
-disgust 样本少、表达复杂，目前仍是难点。
-
-🔍 我更关心的：冲突与纠偏
+🔍 冲突与纠偏
 首轮冲突率
 54.67% 的样本中，三位专家首轮判断存在冲突
 → 说明模态不一致是常态，不是特例。
@@ -120,16 +111,32 @@ disgust 样本少、表达复杂，目前仍是难点。
 
 扩展到更多场景：客服、教育、心理辅助等。
 
-📚 参考文献（精选）
-Du et al., Improving factuality and reasoning in language models through multiagent debate, ICML 2023
-
-Cheng et al., Emotion-LLaMA, NeurIPS 2024
-
-Ghosal et al., DialogueGCN, EMNLP 2019
-
-Hu et al., DialogueCRN, ACL 2021
-
-Luo et al., Confidence-Aware Self-Distillation for Multimodal Sentiment Analysis, ICME 2025
+📚 参考文献
+［1］Picard R W. Affective computing[M]. Cambridge: MIT Press, 2000.
+［2］徐亚萍, 李艳燕, 李新, 等. 学习情感计算研究——基于国际研究的系统性文献综述[J]. 数字教育, 2024, 10(01): 1-9.
+［3］Baltrušaitis T, Ahuja C, Morency L P. Multimodal machine learning: A survey and taxonomy[J]. IEEE transactions on pattern analysis and machine intelligence, 2018, 41(2): 423-443.
+［4］何俊, 刘跃, 何忠文. 多模态情感识别研究进展[J]. 计算机应用研究, 2018, 35(11): 3201-3205.
+［5］黄茂春. 基于视频数据的多模态情感计算研究[D]. 华南理工大学, 2023.
+［6］Cheng Z, Cheng ZQ, He JY, et al. Emotion-llama: Multimodal emotion recognition and reasoning with instruction tuning[J]. Advances in Neural Information Processing Systems, 2024, 37: 110805-110853.
+［7］Du Y, Li S, Torralba A, et al. Improving factuality and reasoning in language models through multiagent debate[C]//Forty-first International Conference on Machine Learning, Montreal, Canada, 2023: 1234-1245.
+［8］Liang T, He Z, Jiao W, et al. Encouraging divergent thinking in large language models through multi-agent debate[C]//Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, Abu Dhabi, UAE, 2024: 17889-17904.
+［9］Fang C, Liang F, Li T, et al. Learning modality consistency and difference information with multitask learning for multimodal sentiment analysis[J]. Future Internet, 2024, 16(6): 213.
+［10］Ortigoso A R, Vieira G, Fuentes D, et al. Project Riley: Multimodal Multi-Agent LLM Collaboration with Emotional Reasoning and Voting[EB/OL]. arXiv preprint, arXiv:2505.20521, 2025.  
+［11］Wooldridge M. An Introduction to Multiagent Systems[M]. John Wiley & Sons, 2009.
+［12］孟祥瑞, 杨文忠, 王婷. 基于图文融合的情感分析研究综述[J]. 计算机应用, 2021, 41(02): 307-317.
+［13］Gerczuk M, Amiriparian S, Ottl S, et al. EmoNet: A transfer learning framework for multi-corpus speech emotion recognition[J]. IEEE Transactions on Affective Computing, 2023(2): 14.
+［14］Luo Y, Wang S, Xu Z, et al. Confidence-Aware Self-Distillation for Multimodal Sentiment Analysis with Incomplete Modalities[C]//International Conference on Multimedia and Expo (ICME), Vancouver, Canada, 2025: 567-574.
+［15］Ghosal D, Majumder N, Poria S, et al. Dialoguegcn: A graph convolutional neural network for emotion recognition in conversation[C]//Proceedings of the 2019 conference on empirical methods in natural language processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019: 154-164.
+［16］Hu D, Wei L, Huai X. Dialoguecrn: Contextual reasoning networks for emotion recognition in conversations[C]//Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers). 2021: 7042-7052.
+［17］Hu J, Liu Y, Zhao J, et al. MMGCN: Multimodal fusion via deep graph convolution network for emotion recognition in conversation[C]//Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers). 2021: 5666-5675.
+［18］Ghosal D, Majumder N, Gelbukh A, et al. Cosmic: Commonsense knowledge for emotion identification in conversations[C]//Findings of the association for computational linguistics: EMNLP 2020. 2020: 2470-2481.
+［19］陶建华, 刘斌. 情感计算理论与方法[M]. 北京: 清华大学出版社.
+［20］Argumentation in Artificial Intelligence[M]. Heidelberg: Springer, 2009.
+［21］李太豪, 董建敏, 程翠萍, 朱敏. 情感计算：概念与原理[M]. 上海: 上海科学技术出版社.
+［22］Tian L, Oviatt S, Muszynski M, et al. Applied Affective Computing[M]. New York: Association for Computing Machinery, 2022.
+［23］Bansal R, Samanta B, Dalmia S, et al. LLM augmented LLMs: Expanding capabilities through composition[C]//The Twelfth International Conference on Learning Representations, Vienna, Austria, 2024: 101-110.
+［24］Lei Y. In-depth study and application analysis of multimodal emotion recognition methods: Multidimensional fusion techniques based on vision, speech, and text[C]//Hainan International College, Communication University of China, Lingshui, China, 2024: 45-53.
+［25］Majumder N, Poria S, Hazarika D, et al. DialogueRNN: An attentive RNN for emotion detection in conversations[J]. Proceedings of the AAAI Conference on Artificial Intelligence, 2019, 33: 6818-6825.
 
 💬 写在最后
 我不追求一次性打败所有 SOTA 模型，而是希望展示一种更透明、更可控、更贴近人类推理方式的多模态情感识别路径。
